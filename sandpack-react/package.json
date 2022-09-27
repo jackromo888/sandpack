@@ -22,7 +22,7 @@
     "build:publish": "yarn build",
     "build:types": "tsc -p tsconfig.json",
     "start": "tsc -p tsconfig.esm.json --watch",
-    "storybook": "start-storybook -p 6006 --no-dll",
+    "storybook": "STORYBOOK_SANDPACK_BARE_COMPONENTS=true start-storybook -p 6006 --no-dll",
     "build-storybook": "build-storybook --no-dll",
     "typecheck": "tsc",
     "chromatic": "chromatic --project-token CHROMATIC_PROJECT_TOKEN"
